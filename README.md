@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Optimal AI Security Guide
 
-## Getting Started
+A comprehensive security framework for autonomous AI systems, featuring interactive visualizations, threat analysis, and defense strategies aligned with NIST AI RMF, NIST 800-53 Rev 5, and OWASP AISVS standards.
 
-First, run the development server:
+## 🌟 Features
 
+- **Interactive Framework Mapping**: Visual relationships between security frameworks
+- **Threat Analysis**: Comprehensive attack vector assessment and mitigation strategies
+- **Component Security**: Detailed analysis of AI system components and vulnerabilities
+- **Control Implementation**: Practical guidance for security control deployment
+- **NIST 800-53 Integration**: Complete mapping to NIST security controls
+- **Developer Resources**: Tools, best practices, and implementation guidance
+
+## 🚀 Live Demo
+
+Visit the live application: [https://yourusername.github.io/optimal-ai-security-guide](https://yourusername.github.io/optimal-ai-security-guide)
+
+## 🛠️ Technology Stack
+
+- **Frontend**: Next.js 15, React 18, TypeScript
+- **Styling**: Tailwind CSS 4
+- **Visualizations**: Mermaid.js, D3.js
+- **Deployment**: GitHub Pages (Static Export)
+
+## 📋 Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+- Git
+
+## 🔧 Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/optimal-ai-security-guide.git
+cd optimal-ai-security-guide
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## 🏗️ Build & Deployment
 
-To learn more about Next.js, take a look at the following resources:
+### Local Build
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Production Server
+```bash
+node simple-server.js
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### GitHub Pages Deployment
+```bash
+npm run deploy
+```
 
-## Deploy on Vercel
+## 📁 Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+src/
+├── app/                    # Next.js app router pages
+│   ├── components/         # Component pages
+│   ├── threats/           # Threat analysis pages
+│   ├── controls/          # Security controls pages
+│   ├── nist-mapping/      # Framework mapping
+│   └── vulnerabilities/   # Vulnerability database
+├── components/            # Reusable React components
+├── data/                 # Static data and configurations
+└── styles/               # Global styles and Tailwind config
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎯 Key Modules
+
+- **Components**: AI system component analysis and security considerations
+- **Threats**: Attack vector assessment and mitigation strategies
+- **Controls**: Security control implementation and guidance
+- **NIST Mapping**: Interactive framework relationship visualization
+- **Vulnerabilities**: Comprehensive vulnerability database with filtering
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- NIST AI Risk Management Framework
+- OWASP AI Security Verification Standard
+- NIST 800-53 Rev 5 Security Controls
+- AI Security Community
