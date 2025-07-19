@@ -2,13 +2,20 @@ import Link from 'next/link';
 import { getAtlasTacticById, atlasTactics } from '../../../data/atlasData';
 
 interface PageProps {
-  params: {
+  params: Promise<{
     tacticId: string;
-  };
+  }>;
 }
 
-export default function AtlasTacticPage({ params }: PageProps) {
-  const tactic = getAtlasTacticById(params.tacticId);
+export async function generateStaticParams() {
+  return atlasTactics.map((tactic) => ({
+    tacticId: tactic.id,
+  }));
+}
+
+export default async function AtlasTacticPage({ params }: PageProps) {
+  const { tacticId } = await params;
+  const tactic = getAtlasTacticById(tacticId);
 
   if (!tactic) {
     return (
