@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
   },
   // Ensure proper routing for static export
   trailingSlash: true,
-  // Use basePath only for GitHub Pages without custom domain
+  // Use basePath only for GitHub Pages subdomain, not for custom domains
   basePath: process.env.NODE_ENV === 'production' && process.env.GITHUB_PAGES === 'true' && !process.env.CUSTOM_DOMAIN ? '/optimal-ai-security-guide' : '',
   assetPrefix: process.env.NODE_ENV === 'production' && process.env.GITHUB_PAGES === 'true' && !process.env.CUSTOM_DOMAIN ? '/optimal-ai-security-guide/' : '',
 };
