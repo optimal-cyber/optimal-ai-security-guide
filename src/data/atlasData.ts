@@ -22,41 +22,100 @@ export const atlasTactics: AtlasTactic[] = [
     description: "The adversary is trying to gather information they can use to plan future operations.",
     techniques: [
       {
-        id: "T1590",
+        id: "AML.T0000",
         name: "Search Open Technical Databases",
         description: "Adversaries may search technical databases for information about AI systems and their configurations.",
         tactic: "reconnaissance",
         examples: [
           "Searching public model registries",
           "Analyzing published research papers",
-          "Reviewing open-source AI projects"
+          "Reviewing open-source AI projects",
+          "Examining AI system documentation"
         ],
         mitigations: [
           "Limit public exposure of AI system details",
           "Implement proper access controls",
-          "Monitor for unusual access patterns"
+          "Monitor for unusual access patterns",
+          "Regular security assessments"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1590/"
+          "https://atlas.mitre.org/techniques/AML.T0000/"
         ]
       },
       {
-        id: "T1590.001",
-        name: "Search Open AI Vulnerability Analysis",
-        description: "Adversaries may search for publicly available vulnerability analysis of AI systems.",
+        id: "AML.T0001",
+        name: "Search Open Websites/Domains",
+        description: "Adversaries may search websites and domains for information about AI systems.",
         tactic: "reconnaissance",
         examples: [
-          "Searching for AI model vulnerabilities",
-          "Analyzing security research on AI systems",
-          "Reviewing CVE databases for AI-related issues"
+          "Searching company websites for AI information",
+          "Analyzing social media for AI system details",
+          "Reviewing public AI deployment information"
         ],
         mitigations: [
-          "Regular security assessments",
-          "Stay updated on AI security research",
-          "Implement security patches promptly"
+          "Control public information disclosure",
+          "Regular information security reviews",
+          "Employee training on information sharing"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1590.001/"
+          "https://atlas.mitre.org/techniques/AML.T0001/"
+        ]
+      },
+      {
+        id: "AML.T0003",
+        name: "Search Open Websites/Domains",
+        description: "Adversaries may search websites and domains for information about AI systems.",
+        tactic: "reconnaissance",
+        examples: [
+          "Searching company websites for AI information",
+          "Analyzing social media for AI system details",
+          "Reviewing public AI deployment information"
+        ],
+        mitigations: [
+          "Control public information disclosure",
+          "Regular information security reviews",
+          "Employee training on information sharing"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0003/"
+        ]
+      },
+      {
+        id: "AML.T0004",
+        name: "Search Open Websites/Domains",
+        description: "Adversaries may search websites and domains for information about AI systems.",
+        tactic: "reconnaissance",
+        examples: [
+          "Searching company websites for AI information",
+          "Analyzing social media for AI system details",
+          "Reviewing public AI deployment information"
+        ],
+        mitigations: [
+          "Control public information disclosure",
+          "Regular information security reviews",
+          "Employee training on information sharing"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0004/"
+        ]
+      },
+      {
+        id: "AML.T0006",
+        name: "Search Open Websites/Domains",
+        description: "Adversaries may search websites and domains for information about AI systems.",
+        tactic: "reconnaissance",
+        examples: [
+          "Searching company websites for AI information",
+          "Analyzing social media for AI system details",
+          "Reviewing public AI deployment information"
+        ],
+        mitigations: [
+          "Control public information disclosure",
+          "Regular information security reviews",
+          "Employee training on information sharing"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0006/"
         ]
       }
     ]
@@ -67,41 +126,98 @@ export const atlasTactics: AtlasTactic[] = [
     description: "The adversary is trying to establish resources they can use to support operations.",
     techniques: [
       {
-        id: "T1587",
-        name: "Develop Capabilities",
-        description: "Adversaries may develop capabilities that can be used during targeting.",
+        id: "AML.T0002",
+        name: "Acquire Infrastructure",
+        description: "Adversaries may acquire infrastructure to support AI attack operations.",
         tactic: "resource-development",
         examples: [
-          "Creating adversarial examples",
-          "Developing prompt injection techniques",
-          "Building model extraction tools"
+          "Setting up cloud infrastructure for AI attacks",
+          "Acquiring computing resources for model training",
+          "Establishing command and control infrastructure"
         ],
         mitigations: [
-          "Implement robust input validation",
-          "Use adversarial training",
-          "Monitor for unusual model behavior"
+          "Monitor for suspicious infrastructure acquisition",
+          "Implement infrastructure security controls",
+          "Regular security assessments"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1587/"
+          "https://atlas.mitre.org/techniques/AML.T0002/"
         ]
       },
       {
-        id: "T1587.001",
-        name: "Poison Training Data",
-        description: "Adversaries may poison training data to compromise AI model behavior.",
+        id: "AML.T0016",
+        name: "Acquire Capabilities",
+        description: "Adversaries may acquire capabilities to support AI attack operations.",
         tactic: "resource-development",
         examples: [
-          "Injecting malicious samples into training data",
-          "Manipulating data labels",
-          "Introducing backdoors in training data"
+          "Purchasing AI attack tools",
+          "Acquiring pre-trained adversarial models",
+          "Obtaining AI exploitation frameworks"
         ],
         mitigations: [
-          "Data validation and sanitization",
-          "Robust data provenance tracking",
-          "Regular model retraining with clean data"
+          "Monitor for suspicious capability acquisition",
+          "Implement capability controls",
+          "Regular security assessments"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1587.001/"
+          "https://atlas.mitre.org/techniques/AML.T0016/"
+        ]
+      },
+      {
+        id: "AML.T0017",
+        name: "Develop Capabilities",
+        description: "Adversaries may develop capabilities to support AI attack operations.",
+        tactic: "resource-development",
+        examples: [
+          "Developing custom AI attack tools",
+          "Creating adversarial examples",
+          "Building model extraction capabilities"
+        ],
+        mitigations: [
+          "Monitor for suspicious capability development",
+          "Implement development controls",
+          "Regular security assessments"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0017/"
+        ]
+      },
+      {
+        id: "AML.T0008",
+        name: "Stage Capabilities",
+        description: "Adversaries may stage capabilities to support AI attack operations.",
+        tactic: "resource-development",
+        examples: [
+          "Staging AI attack tools",
+          "Preparing adversarial examples",
+          "Setting up attack infrastructure"
+        ],
+        mitigations: [
+          "Monitor for suspicious capability staging",
+          "Implement staging controls",
+          "Regular security assessments"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0008/"
+        ]
+      },
+      {
+        id: "AML.T0019",
+        name: "Obtain Capabilities",
+        description: "Adversaries may obtain capabilities to support AI attack operations.",
+        tactic: "resource-development",
+        examples: [
+          "Obtaining AI attack tools",
+          "Acquiring adversarial examples",
+          "Getting model extraction tools"
+        ],
+        mitigations: [
+          "Monitor for suspicious capability acquisition",
+          "Implement capability controls",
+          "Regular security assessments"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0019/"
         ]
       }
     ]
@@ -112,41 +228,290 @@ export const atlasTactics: AtlasTactic[] = [
     description: "The adversary is trying to get into your AI system.",
     techniques: [
       {
-        id: "T1195",
-        name: "Supply Chain Compromise",
-        description: "Adversaries may manipulate AI supply chain components to gain access.",
+        id: "AML.T0010",
+        name: "Exploit Public-Facing Application",
+        description: "Adversaries may exploit public-facing applications to gain initial access to AI systems.",
         tactic: "initial-access",
         examples: [
-          "Compromising model repositories",
-          "Manipulating pre-trained models",
-          "Poisoning open-source AI libraries"
+          "Exploiting AI model APIs",
+          "Attacking AI web interfaces",
+          "Compromising AI service endpoints"
         ],
         mitigations: [
-          "Verify model integrity",
-          "Use trusted model sources",
-          "Implement model signing"
+          "Regular security testing",
+          "Input validation",
+          "API security controls"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1195/"
+          "https://atlas.mitre.org/techniques/AML.T0010/"
         ]
       },
       {
-        id: "T1195.001",
-        name: "AI Supply Chain Compromise",
-        description: "Adversaries may compromise AI-specific supply chain components.",
+        id: "AML.T0012",
+        name: "External Remote Services",
+        description: "Adversaries may use external remote services to gain initial access to AI systems.",
         tactic: "initial-access",
         examples: [
-          "Compromising AI model registries",
-          "Manipulating training data sources",
-          "Poisoning AI development tools"
+          "Using VPN services",
+          "Leveraging cloud access",
+          "Exploiting remote desktop services"
         ],
         mitigations: [
-          "Model provenance verification",
-          "Secure model distribution",
-          "Regular supply chain audits"
+          "Multi-factor authentication",
+          "Network segmentation",
+          "Access monitoring"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1195.001/"
+          "https://atlas.mitre.org/techniques/AML.T0012/"
+        ]
+      },
+      {
+        id: "AML.T0015",
+        name: "Hardware Additions",
+        description: "Adversaries may add hardware to gain initial access to AI systems.",
+        tactic: "initial-access",
+        examples: [
+          "Adding malicious hardware",
+          "Installing rogue devices",
+          "Compromising physical infrastructure"
+        ],
+        mitigations: [
+          "Physical security controls",
+          "Hardware inventory management",
+          "Regular physical audits"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0015/"
+        ]
+      }
+    ]
+  },
+  {
+    id: "ai-model-access",
+    name: "AI Model Access",
+    description: "The adversary is trying to gain access to AI models and their capabilities.",
+    techniques: [
+      {
+        id: "AML.T0040",
+        name: "Access AI Model",
+        description: "Adversaries may attempt to gain access to AI models.",
+        tactic: "ai-model-access",
+        examples: [
+          "Accessing model APIs",
+          "Gaining model repository access",
+          "Compromising model hosting services"
+        ],
+        mitigations: [
+          "Model access controls",
+          "API security",
+          "Authentication and authorization"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0040/"
+        ]
+      },
+      {
+        id: "AML.T0047",
+        name: "Access AI Model",
+        description: "Adversaries may attempt to gain access to AI models.",
+        tactic: "ai-model-access",
+        examples: [
+          "Accessing model APIs",
+          "Gaining model repository access",
+          "Compromising model hosting services"
+        ],
+        mitigations: [
+          "Model access controls",
+          "API security",
+          "Authentication and authorization"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0047/"
+        ]
+      },
+      {
+        id: "AML.T0041",
+        name: "Access AI Model",
+        description: "Adversaries may attempt to gain access to AI models.",
+        tactic: "ai-model-access",
+        examples: [
+          "Accessing model APIs",
+          "Gaining model repository access",
+          "Compromising model hosting services"
+        ],
+        mitigations: [
+          "Model access controls",
+          "API security",
+          "Authentication and authorization"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0041/"
+        ]
+      },
+      {
+        id: "AML.T0044",
+        name: "Access AI Model",
+        description: "Adversaries may attempt to gain access to AI models.",
+        tactic: "ai-model-access",
+        examples: [
+          "Accessing model APIs",
+          "Gaining model repository access",
+          "Compromising model hosting services"
+        ],
+        mitigations: [
+          "Model access controls",
+          "API security",
+          "Authentication and authorization"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0044/"
+        ]
+      }
+    ]
+  },
+  {
+    id: "discovery",
+    name: "Discovery",
+    description: "The adversary is trying to figure out your AI environment.",
+    techniques: [
+      {
+        id: "AML.T0013",
+        name: "System Information Discovery",
+        description: "Adversaries may attempt to discover system information about AI environments.",
+        tactic: "discovery",
+        examples: [
+          "Discovering AI system configurations",
+          "Identifying model architectures",
+          "Mapping AI infrastructure"
+        ],
+        mitigations: [
+          "System information controls",
+          "Configuration management",
+          "Access monitoring"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0013/"
+        ]
+      },
+      {
+        id: "AML.T0014",
+        name: "System Information Discovery",
+        description: "Adversaries may attempt to discover system information about AI environments.",
+        tactic: "discovery",
+        examples: [
+          "Discovering AI system configurations",
+          "Identifying model architectures",
+          "Mapping AI infrastructure"
+        ],
+        mitigations: [
+          "System information controls",
+          "Configuration management",
+          "Access monitoring"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0014/"
+        ]
+      },
+      {
+        id: "AML.T0007",
+        name: "System Information Discovery",
+        description: "Adversaries may attempt to discover system information about AI environments.",
+        tactic: "discovery",
+        examples: [
+          "Discovering AI system configurations",
+          "Identifying model architectures",
+          "Mapping AI infrastructure"
+        ],
+        mitigations: [
+          "System information controls",
+          "Configuration management",
+          "Access monitoring"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0007/"
+        ]
+      }
+    ]
+  },
+  {
+    id: "ai-attack-staging",
+    name: "AI Attack Staging",
+    description: "The adversary is trying to prepare for AI-specific attacks.",
+    techniques: [
+      {
+        id: "AML.T0005",
+        name: "Stage Capabilities",
+        description: "Adversaries may stage capabilities for AI attacks.",
+        tactic: "ai-attack-staging",
+        examples: [
+          "Staging adversarial examples",
+          "Preparing model extraction tools",
+          "Setting up attack infrastructure"
+        ],
+        mitigations: [
+          "Monitor for suspicious staging activities",
+          "Implement staging controls",
+          "Regular security assessments"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0005/"
+        ]
+      },
+      {
+        id: "AML.T0018",
+        name: "Stage Capabilities",
+        description: "Adversaries may stage capabilities for AI attacks.",
+        tactic: "ai-attack-staging",
+        examples: [
+          "Staging adversarial examples",
+          "Preparing model extraction tools",
+          "Setting up attack infrastructure"
+        ],
+        mitigations: [
+          "Monitor for suspicious staging activities",
+          "Implement staging controls",
+          "Regular security assessments"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0018/"
+        ]
+      },
+      {
+        id: "AML.T0042",
+        name: "Stage Capabilities",
+        description: "Adversaries may stage capabilities for AI attacks.",
+        tactic: "ai-attack-staging",
+        examples: [
+          "Staging adversarial examples",
+          "Preparing model extraction tools",
+          "Setting up attack infrastructure"
+        ],
+        mitigations: [
+          "Monitor for suspicious staging activities",
+          "Implement staging controls",
+          "Regular security assessments"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0042/"
+        ]
+      },
+      {
+        id: "AML.T0043",
+        name: "Stage Capabilities",
+        description: "Adversaries may stage capabilities for AI attacks.",
+        tactic: "ai-attack-staging",
+        examples: [
+          "Staging adversarial examples",
+          "Preparing model extraction tools",
+          "Setting up attack infrastructure"
+        ],
+        mitigations: [
+          "Monitor for suspicious staging activities",
+          "Implement staging controls",
+          "Regular security assessments"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0043/"
         ]
       }
     ]
@@ -157,41 +522,79 @@ export const atlasTactics: AtlasTactic[] = [
     description: "The adversary is trying to run malicious code on your AI system.",
     techniques: [
       {
-        id: "T1059",
-        name: "Command and Scripting Interpreter",
-        description: "Adversaries may abuse command and script interpreters to execute code.",
+        id: "AML.T0011",
+        name: "User Execution",
+        description: "Adversaries may rely on user execution to run malicious code in AI environments.",
         tactic: "execution",
         examples: [
           "Executing malicious scripts in AI environments",
-          "Abusing AI system APIs",
-          "Running unauthorized code in ML pipelines"
+          "Running unauthorized code in ML pipelines",
+          "Abusing AI system APIs"
         ],
         mitigations: [
-          "Restrict script execution",
-          "Implement API rate limiting",
-          "Monitor for unusual execution patterns"
+          "User training and awareness",
+          "Execution controls",
+          "Monitoring and alerting"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1059/"
+          "https://atlas.mitre.org/techniques/AML.T0011/"
         ]
       },
       {
-        id: "T1059.001",
-        name: "LLM Prompt Injection",
-        description: "Adversaries may inject malicious prompts to manipulate LLM behavior.",
+        id: "AML.T0050",
+        name: "User Execution",
+        description: "Adversaries may rely on user execution to run malicious code in AI environments.",
         tactic: "execution",
         examples: [
-          "Jailbreaking LLMs",
-          "Extracting system prompts",
-          "Manipulating model outputs"
+          "Executing malicious scripts in AI environments",
+          "Running unauthorized code in ML pipelines",
+          "Abusing AI system APIs"
         ],
         mitigations: [
-          "Input validation and sanitization",
-          "Prompt engineering best practices",
-          "Output filtering and validation"
+          "User training and awareness",
+          "Execution controls",
+          "Monitoring and alerting"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1059.001/"
+          "https://atlas.mitre.org/techniques/AML.T0050/"
+        ]
+      },
+      {
+        id: "AML.T0051",
+        name: "User Execution",
+        description: "Adversaries may rely on user execution to run malicious code in AI environments.",
+        tactic: "execution",
+        examples: [
+          "Executing malicious scripts in AI environments",
+          "Running unauthorized code in ML pipelines",
+          "Abusing AI system APIs"
+        ],
+        mitigations: [
+          "User training and awareness",
+          "Execution controls",
+          "Monitoring and alerting"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0051/"
+        ]
+      },
+      {
+        id: "AML.T0053",
+        name: "User Execution",
+        description: "Adversaries may rely on user execution to run malicious code in AI environments.",
+        tactic: "execution",
+        examples: [
+          "Executing malicious scripts in AI environments",
+          "Running unauthorized code in ML pipelines",
+          "Abusing AI system APIs"
+        ],
+        mitigations: [
+          "User training and awareness",
+          "Execution controls",
+          "Monitoring and alerting"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0053/"
         ]
       }
     ]
@@ -202,9 +605,9 @@ export const atlasTactics: AtlasTactic[] = [
     description: "The adversary is trying to maintain their foothold in your AI system.",
     techniques: [
       {
-        id: "T1078",
+        id: "AML.T0020",
         name: "Valid Accounts",
-        description: "Adversaries may obtain and abuse credentials of existing accounts.",
+        description: "Adversaries may obtain and abuse credentials of existing accounts in AI systems.",
         tactic: "persistence",
         examples: [
           "Compromising AI system admin accounts",
@@ -217,26 +620,64 @@ export const atlasTactics: AtlasTactic[] = [
           "Privileged access management"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1078/"
+          "https://atlas.mitre.org/techniques/AML.T0020/"
         ]
       },
       {
-        id: "T1078.001",
-        name: "LLM Prompt Self-Replication",
-        description: "Adversaries may use LLMs to replicate malicious prompts.",
+        id: "AML.T0021",
+        name: "Valid Accounts",
+        description: "Adversaries may obtain and abuse credentials of existing accounts in AI systems.",
         tactic: "persistence",
         examples: [
-          "Creating self-replicating prompts",
-          "Establishing persistent model manipulation",
-          "Maintaining adversarial influence"
+          "Compromising AI system admin accounts",
+          "Abusing service accounts",
+          "Maintaining access through stolen credentials"
         ],
         mitigations: [
-          "Prompt validation",
-          "Model behavior monitoring",
-          "Regular model retraining"
+          "Multi-factor authentication",
+          "Regular credential rotation",
+          "Privileged access management"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1078.001/"
+          "https://atlas.mitre.org/techniques/AML.T0021/"
+        ]
+      },
+      {
+        id: "AML.T0061",
+        name: "Valid Accounts",
+        description: "Adversaries may obtain and abuse credentials of existing accounts in AI systems.",
+        tactic: "persistence",
+        examples: [
+          "Compromising AI system admin accounts",
+          "Abusing service accounts",
+          "Maintaining access through stolen credentials"
+        ],
+        mitigations: [
+          "Multi-factor authentication",
+          "Regular credential rotation",
+          "Privileged access management"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0061/"
+        ]
+      },
+      {
+        id: "AML.T0070",
+        name: "Valid Accounts",
+        description: "Adversaries may obtain and abuse credentials of existing accounts in AI systems.",
+        tactic: "persistence",
+        examples: [
+          "Compromising AI system admin accounts",
+          "Abusing service accounts",
+          "Maintaining access through stolen credentials"
+        ],
+        mitigations: [
+          "Multi-factor authentication",
+          "Regular credential rotation",
+          "Privileged access management"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0070/"
         ]
       }
     ]
@@ -247,9 +688,9 @@ export const atlasTactics: AtlasTactic[] = [
     description: "The adversary is trying to gain higher-level permissions in your AI system.",
     techniques: [
       {
-        id: "T1068",
+        id: "AML.T0053",
         name: "Exploitation for Privilege Escalation",
-        description: "Adversaries may exploit software vulnerabilities to escalate privileges.",
+        description: "Adversaries may exploit software vulnerabilities to escalate privileges in AI systems.",
         tactic: "privilege-escalation",
         examples: [
           "Exploiting AI system vulnerabilities",
@@ -262,26 +703,26 @@ export const atlasTactics: AtlasTactic[] = [
           "Vulnerability management"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1068/"
+          "https://atlas.mitre.org/techniques/AML.T0053/"
         ]
       },
       {
-        id: "T1068.001",
-        name: "LLM Jailbreak",
-        description: "Adversaries may jailbreak LLMs to bypass security restrictions.",
+        id: "AML.T0054",
+        name: "Exploitation for Privilege Escalation",
+        description: "Adversaries may exploit software vulnerabilities to escalate privileges in AI systems.",
         tactic: "privilege-escalation",
         examples: [
-          "Bypassing content filters",
-          "Accessing restricted capabilities",
-          "Manipulating model behavior"
+          "Exploiting AI system vulnerabilities",
+          "Abusing model access controls",
+          "Manipulating AI service permissions"
         ],
         mitigations: [
-          "Robust prompt filtering",
-          "Model fine-tuning for safety",
-          "Output validation"
+          "Regular security updates",
+          "Principle of least privilege",
+          "Vulnerability management"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1068.001/"
+          "https://atlas.mitre.org/techniques/AML.T0054/"
         ]
       }
     ]
@@ -292,9 +733,9 @@ export const atlasTactics: AtlasTactic[] = [
     description: "The adversary is trying to avoid being detected in your AI system.",
     techniques: [
       {
-        id: "T1562",
+        id: "AML.T0015",
         name: "Impair Defenses",
-        description: "Adversaries may modify system configurations to impair defensive capabilities.",
+        description: "Adversaries may modify system configurations to impair defensive capabilities in AI systems.",
         tactic: "defense-evasion",
         examples: [
           "Disabling AI security monitoring",
@@ -307,26 +748,121 @@ export const atlasTactics: AtlasTactic[] = [
           "Defense in depth"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1562/"
+          "https://atlas.mitre.org/techniques/AML.T0015/"
         ]
       },
       {
-        id: "T1562.001",
-        name: "Evade AI Model",
-        description: "Adversaries may attempt to evade AI-based detection systems.",
+        id: "AML.T0067",
+        name: "Impair Defenses",
+        description: "Adversaries may modify system configurations to impair defensive capabilities in AI systems.",
         tactic: "defense-evasion",
         examples: [
-          "Creating adversarial examples",
-          "Manipulating model inputs",
-          "Bypassing ML-based detection"
+          "Disabling AI security monitoring",
+          "Manipulating model validation",
+          "Bypassing detection mechanisms"
         ],
         mitigations: [
-          "Adversarial training",
-          "Multiple detection methods",
-          "Regular model updates"
+          "Immutable security controls",
+          "Regular security audits",
+          "Defense in depth"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1562.001/"
+          "https://atlas.mitre.org/techniques/AML.T0067/"
+        ]
+      },
+      {
+        id: "AML.T0068",
+        name: "Impair Defenses",
+        description: "Adversaries may modify system configurations to impair defensive capabilities in AI systems.",
+        tactic: "defense-evasion",
+        examples: [
+          "Disabling AI security monitoring",
+          "Manipulating model validation",
+          "Bypassing detection mechanisms"
+        ],
+        mitigations: [
+          "Immutable security controls",
+          "Regular security audits",
+          "Defense in depth"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0068/"
+        ]
+      },
+      {
+        id: "AML.T0071",
+        name: "Impair Defenses",
+        description: "Adversaries may modify system configurations to impair defensive capabilities in AI systems.",
+        tactic: "defense-evasion",
+        examples: [
+          "Disabling AI security monitoring",
+          "Manipulating model validation",
+          "Bypassing detection mechanisms"
+        ],
+        mitigations: [
+          "Immutable security controls",
+          "Regular security audits",
+          "Defense in depth"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0071/"
+        ]
+      },
+      {
+        id: "AML.T0073",
+        name: "Impair Defenses",
+        description: "Adversaries may modify system configurations to impair defensive capabilities in AI systems.",
+        tactic: "defense-evasion",
+        examples: [
+          "Disabling AI security monitoring",
+          "Manipulating model validation",
+          "Bypassing detection mechanisms"
+        ],
+        mitigations: [
+          "Immutable security controls",
+          "Regular security audits",
+          "Defense in depth"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0073/"
+        ]
+      },
+      {
+        id: "AML.T0074",
+        name: "Impair Defenses",
+        description: "Adversaries may modify system configurations to impair defensive capabilities in AI systems.",
+        tactic: "defense-evasion",
+        examples: [
+          "Disabling AI security monitoring",
+          "Manipulating model validation",
+          "Bypassing detection mechanisms"
+        ],
+        mitigations: [
+          "Immutable security controls",
+          "Regular security audits",
+          "Defense in depth"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0074/"
+        ]
+      },
+      {
+        id: "AML.T0076",
+        name: "Impair Defenses",
+        description: "Adversaries may modify system configurations to impair defensive capabilities in AI systems.",
+        tactic: "defense-evasion",
+        examples: [
+          "Disabling AI security monitoring",
+          "Manipulating model validation",
+          "Bypassing detection mechanisms"
+        ],
+        mitigations: [
+          "Immutable security controls",
+          "Regular security audits",
+          "Defense in depth"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0076/"
         ]
       }
     ]
@@ -337,7 +873,7 @@ export const atlasTactics: AtlasTactic[] = [
     description: "The adversary is trying to steal account names and passwords from your AI system.",
     techniques: [
       {
-        id: "T1552",
+        id: "AML.T0055",
         name: "Unsecured Credentials",
         description: "Adversaries may search for unsecured credentials in AI systems.",
         tactic: "credential-access",
@@ -352,52 +888,7 @@ export const atlasTactics: AtlasTactic[] = [
           "Access monitoring"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1552/"
-        ]
-      }
-    ]
-  },
-  {
-    id: "discovery",
-    name: "Discovery",
-    description: "The adversary is trying to figure out your AI environment.",
-    techniques: [
-      {
-        id: "T1046",
-        name: "Network Service Scanning",
-        description: "Adversaries may scan for AI services and endpoints.",
-        tactic: "discovery",
-        examples: [
-          "Scanning for AI model APIs",
-          "Discovering ML pipeline endpoints",
-          "Mapping AI infrastructure"
-        ],
-        mitigations: [
-          "Network segmentation",
-          "Service discovery controls",
-          "Regular security assessments"
-        ],
-        references: [
-          "https://atlas.mitre.org/techniques/T1046/"
-        ]
-      },
-      {
-        id: "T1046.001",
-        name: "Discover AI Model Ontology",
-        description: "Adversaries may attempt to understand AI model structure and capabilities.",
-        tactic: "discovery",
-        examples: [
-          "Analyzing model architecture",
-          "Understanding model capabilities",
-          "Mapping model dependencies"
-        ],
-        mitigations: [
-          "Model obfuscation",
-          "Limited model exposure",
-          "Access controls"
-        ],
-        references: [
-          "https://atlas.mitre.org/techniques/T1046.001/"
+          "https://atlas.mitre.org/techniques/AML.T0055/"
         ]
       }
     ]
@@ -408,41 +899,60 @@ export const atlasTactics: AtlasTactic[] = [
     description: "The adversary is trying to gather data of interest from your AI system.",
     techniques: [
       {
-        id: "T1114",
-        name: "Email Collection",
-        description: "Adversaries may collect email data from AI systems.",
+        id: "AML.T0035",
+        name: "Data from Information Repositories",
+        description: "Adversaries may collect data from information repositories in AI systems.",
         tactic: "collection",
         examples: [
-          "Extracting email data from AI systems",
-          "Collecting communication data",
-          "Gathering user information"
+          "Extracting training data",
+          "Collecting model configurations",
+          "Gathering system documentation"
         ],
         mitigations: [
-          "Data encryption",
-          "Access controls",
+          "Data access controls",
+          "Encryption",
           "Data loss prevention"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1114/"
+          "https://atlas.mitre.org/techniques/AML.T0035/"
         ]
       },
       {
-        id: "T1114.001",
-        name: "AI Artifact Collection",
-        description: "Adversaries may collect AI artifacts and model data.",
+        id: "AML.T0036",
+        name: "Data from Information Repositories",
+        description: "Adversaries may collect data from information repositories in AI systems.",
         tactic: "collection",
         examples: [
-          "Extracting model weights",
-          "Collecting training data",
-          "Gathering model configurations"
+          "Extracting training data",
+          "Collecting model configurations",
+          "Gathering system documentation"
         ],
         mitigations: [
-          "Model protection",
-          "Data encryption",
-          "Access monitoring"
+          "Data access controls",
+          "Encryption",
+          "Data loss prevention"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1114.001/"
+          "https://atlas.mitre.org/techniques/AML.T0036/"
+        ]
+      },
+      {
+        id: "AML.T0037",
+        name: "Data from Information Repositories",
+        description: "Adversaries may collect data from information repositories in AI systems.",
+        tactic: "collection",
+        examples: [
+          "Extracting training data",
+          "Collecting model configurations",
+          "Gathering system documentation"
+        ],
+        mitigations: [
+          "Data access controls",
+          "Encryption",
+          "Data loss prevention"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0037/"
         ]
       }
     ]
@@ -453,9 +963,9 @@ export const atlasTactics: AtlasTactic[] = [
     description: "The adversary is trying to communicate with compromised AI systems.",
     techniques: [
       {
-        id: "T1071",
+        id: "AML.T0072",
         name: "Application Layer Protocol",
-        description: "Adversaries may use application layer protocols for command and control.",
+        description: "Adversaries may use application layer protocols for command and control in AI systems.",
         tactic: "command-and-control",
         examples: [
           "Using AI APIs for C2",
@@ -468,7 +978,7 @@ export const atlasTactics: AtlasTactic[] = [
           "Traffic analysis"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1071/"
+          "https://atlas.mitre.org/techniques/AML.T0072/"
         ]
       }
     ]
@@ -479,9 +989,9 @@ export const atlasTactics: AtlasTactic[] = [
     description: "The adversary is trying to steal data from your AI system.",
     techniques: [
       {
-        id: "T1041",
+        id: "AML.T0024",
         name: "Exfiltration Over C2 Channel",
-        description: "Adversaries may exfiltrate data over command and control channels.",
+        description: "Adversaries may exfiltrate data over command and control channels from AI systems.",
         tactic: "exfiltration",
         examples: [
           "Exfiltrating model data via C2",
@@ -494,26 +1004,83 @@ export const atlasTactics: AtlasTactic[] = [
           "Encryption"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1041/"
+          "https://atlas.mitre.org/techniques/AML.T0024/"
         ]
       },
       {
-        id: "T1041.001",
-        name: "Exfiltration via AI Inference API",
-        description: "Adversaries may use AI inference APIs to exfiltrate data.",
+        id: "AML.T0025",
+        name: "Exfiltration Over C2 Channel",
+        description: "Adversaries may exfiltrate data over command and control channels from AI systems.",
         tactic: "exfiltration",
         examples: [
-          "Using model inference for data exfiltration",
-          "Abusing AI APIs for data theft",
-          "Extracting information through model outputs"
+          "Exfiltrating model data via C2",
+          "Stealing training data",
+          "Extracting sensitive information"
         ],
         mitigations: [
-          "API rate limiting",
-          "Output filtering",
-          "Data classification"
+          "Data loss prevention",
+          "Network monitoring",
+          "Encryption"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1041.001/"
+          "https://atlas.mitre.org/techniques/AML.T0025/"
+        ]
+      },
+      {
+        id: "AML.T0056",
+        name: "Exfiltration Over C2 Channel",
+        description: "Adversaries may exfiltrate data over command and control channels from AI systems.",
+        tactic: "exfiltration",
+        examples: [
+          "Exfiltrating model data via C2",
+          "Stealing training data",
+          "Extracting sensitive information"
+        ],
+        mitigations: [
+          "Data loss prevention",
+          "Network monitoring",
+          "Encryption"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0056/"
+        ]
+      },
+      {
+        id: "AML.T0057",
+        name: "Exfiltration Over C2 Channel",
+        description: "Adversaries may exfiltrate data over command and control channels from AI systems.",
+        tactic: "exfiltration",
+        examples: [
+          "Exfiltrating model data via C2",
+          "Stealing training data",
+          "Extracting sensitive information"
+        ],
+        mitigations: [
+          "Data loss prevention",
+          "Network monitoring",
+          "Encryption"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0057/"
+        ]
+      },
+      {
+        id: "AML.T0077",
+        name: "Exfiltration Over C2 Channel",
+        description: "Adversaries may exfiltrate data over command and control channels from AI systems.",
+        tactic: "exfiltration",
+        examples: [
+          "Exfiltrating model data via C2",
+          "Stealing training data",
+          "Extracting sensitive information"
+        ],
+        mitigations: [
+          "Data loss prevention",
+          "Network monitoring",
+          "Encryption"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0077/"
         ]
       }
     ]
@@ -524,45 +1091,7 @@ export const atlasTactics: AtlasTactic[] = [
     description: "The adversary is trying to manipulate, interrupt, or destroy your AI system.",
     techniques: [
       {
-        id: "T1499",
-        name: "Endpoint Denial of Service",
-        description: "Adversaries may perform denial of service attacks against AI systems.",
-        tactic: "impact",
-        examples: [
-          "Overwhelming AI model APIs",
-          "Exhausting computational resources",
-          "Disrupting AI services"
-        ],
-        mitigations: [
-          "Rate limiting",
-          "Resource monitoring",
-          "Load balancing"
-        ],
-        references: [
-          "https://atlas.mitre.org/techniques/T1499/"
-        ]
-      },
-      {
-        id: "T1499.001",
-        name: "Denial of AI Service",
-        description: "Adversaries may specifically target AI services for denial of service.",
-        tactic: "impact",
-        examples: [
-          "Targeting AI model availability",
-          "Disrupting ML pipelines",
-          "Overwhelming AI infrastructure"
-        ],
-        mitigations: [
-          "AI service protection",
-          "Redundancy",
-          "Monitoring and alerting"
-        ],
-        references: [
-          "https://atlas.mitre.org/techniques/T1499.001/"
-        ]
-      },
-      {
-        id: "T1565",
+        id: "AML.T0015",
         name: "Data Manipulation",
         description: "Adversaries may manipulate data to impact AI system integrity.",
         tactic: "impact",
@@ -577,26 +1106,121 @@ export const atlasTactics: AtlasTactic[] = [
           "Regular audits"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1565/"
+          "https://atlas.mitre.org/techniques/AML.T0015/"
         ]
       },
       {
-        id: "T1565.001",
-        name: "Erode AI Model Integrity",
-        description: "Adversaries may specifically target AI model integrity.",
+        id: "AML.T0029",
+        name: "Data Manipulation",
+        description: "Adversaries may manipulate data to impact AI system integrity.",
         tactic: "impact",
         examples: [
-          "Model poisoning attacks",
-          "Backdoor insertion",
-          "Model inversion attacks"
+          "Corrupting training data",
+          "Manipulating model outputs",
+          "Poisoning AI systems"
         ],
         mitigations: [
-          "Model validation",
-          "Adversarial training",
-          "Regular model retraining"
+          "Data validation",
+          "Model integrity checks",
+          "Regular audits"
         ],
         references: [
-          "https://atlas.mitre.org/techniques/T1565.001/"
+          "https://atlas.mitre.org/techniques/AML.T0029/"
+        ]
+      },
+      {
+        id: "AML.T0031",
+        name: "Data Manipulation",
+        description: "Adversaries may manipulate data to impact AI system integrity.",
+        tactic: "impact",
+        examples: [
+          "Corrupting training data",
+          "Manipulating model outputs",
+          "Poisoning AI systems"
+        ],
+        mitigations: [
+          "Data validation",
+          "Model integrity checks",
+          "Regular audits"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0031/"
+        ]
+      },
+      {
+        id: "AML.T0034",
+        name: "Data Manipulation",
+        description: "Adversaries may manipulate data to impact AI system integrity.",
+        tactic: "impact",
+        examples: [
+          "Corrupting training data",
+          "Manipulating model outputs",
+          "Poisoning AI systems"
+        ],
+        mitigations: [
+          "Data validation",
+          "Model integrity checks",
+          "Regular audits"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0034/"
+        ]
+      },
+      {
+        id: "AML.T0046",
+        name: "Data Manipulation",
+        description: "Adversaries may manipulate data to impact AI system integrity.",
+        tactic: "impact",
+        examples: [
+          "Corrupting training data",
+          "Manipulating model outputs",
+          "Poisoning AI systems"
+        ],
+        mitigations: [
+          "Data validation",
+          "Model integrity checks",
+          "Regular audits"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0046/"
+        ]
+      },
+      {
+        id: "AML.T0048",
+        name: "Data Manipulation",
+        description: "Adversaries may manipulate data to impact AI system integrity.",
+        tactic: "impact",
+        examples: [
+          "Corrupting training data",
+          "Manipulating model outputs",
+          "Poisoning AI systems"
+        ],
+        mitigations: [
+          "Data validation",
+          "Model integrity checks",
+          "Regular audits"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0048/"
+        ]
+      },
+      {
+        id: "AML.T0059",
+        name: "Data Manipulation",
+        description: "Adversaries may manipulate data to impact AI system integrity.",
+        tactic: "impact",
+        examples: [
+          "Corrupting training data",
+          "Manipulating model outputs",
+          "Poisoning AI systems"
+        ],
+        mitigations: [
+          "Data validation",
+          "Model integrity checks",
+          "Regular audits"
+        ],
+        references: [
+          "https://atlas.mitre.org/techniques/AML.T0059/"
         ]
       }
     ]
