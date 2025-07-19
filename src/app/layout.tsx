@@ -45,10 +45,10 @@ export const metadata: Metadata = {
     siteName: "Optimal AI Security Guide",
     images: [
       {
-        url: "/optimal-logo.png",
-        width: 512,
-        height: 512,
-        alt: "Optimal AI Security Guide",
+        url: "/api/og",
+        width: 1200,
+        height: 630,
+        alt: "Optimal AI Security Guide - Comprehensive AI Security Framework",
       },
     ],
     locale: "en_US",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Optimal AI Security Guide",
     description: "Comprehensive security guidance for AI systems featuring NIST AI RMF, NIST 800-53 Rev 5, and OWASP AISVS mappings with interactive visualizations and developer resources.",
-    images: ["/optimal-logo.png"],
+    images: ["/api/og"],
     creator: "@optimal_cyber",
   },
   robots: {
