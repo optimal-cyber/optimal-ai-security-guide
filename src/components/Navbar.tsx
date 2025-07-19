@@ -18,13 +18,9 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <div className="h-8 w-8 bg-white rounded-lg flex items-center justify-center">
               <img 
-                src="/optimal-logo.svg" 
+                src="/optimal-logo.png" 
                 alt="Optimal" 
                 className="h-6 w-6 object-contain"
-                onError={(e) => {
-                  console.log('SVG logo failed to load, trying PNG');
-                  e.currentTarget.src = '/optimal-logo.png';
-                }}
               />
             </div>
             <div>
@@ -36,36 +32,28 @@ export default function Navbar() {
       </div>
 
       <div className="hidden md:flex gap-6 text-slate-300 font-medium">
-        <Link href="/components" className="hover:text-cyan-400 transition-colors flex items-center gap-1" onClick={() => handleLinkClick('/components')}>
-          <span className="text-sm">⚙️</span>
-          System Parts
+        <Link href="/components" className="hover:text-cyan-400 transition-colors" onClick={() => handleLinkClick('/components')}>
+          Components
         </Link>
-        <Link href="/architectures" className="hover:text-blue-400 transition-colors flex items-center gap-1" onClick={() => handleLinkClick('/architectures')}>
-          <span className="text-sm">🏗️</span>
+        <Link href="/architectures" className="hover:text-blue-400 transition-colors" onClick={() => handleLinkClick('/architectures')}>
           Blueprints
         </Link>
-        <Link href="/threats" className="hover:text-red-400 transition-colors flex items-center gap-1" onClick={() => handleLinkClick('/threats')}>
-          <span className="text-sm">⚡</span>
+        <Link href="/threats" className="hover:text-red-400 transition-colors" onClick={() => handleLinkClick('/threats')}>
           Attack Vectors
         </Link>
-        <Link href="/controls" className="hover:text-emerald-400 transition-colors flex items-center gap-1" onClick={() => handleLinkClick('/controls')}>
-          <span className="text-sm">🛡️</span>
+        <Link href="/controls" className="hover:text-emerald-400 transition-colors" onClick={() => handleLinkClick('/controls')}>
           Defenses
         </Link>
-        <Link href="/aisvs" className="hover:text-purple-400 transition-colors flex items-center gap-1" onClick={() => handleLinkClick('/aisvs')}>
-          <span className="text-sm">🎯</span>
+        <Link href="/aisvs" className="hover:text-purple-400 transition-colors" onClick={() => handleLinkClick('/aisvs')}>
           Standards
         </Link>
-        <Link href="/nist-controls" className="hover:text-blue-400 transition-colors flex items-center gap-1" onClick={() => handleLinkClick('/nist-controls')}>
-          <span className="text-sm">🔒</span>
+        <Link href="/nist-controls" className="hover:text-blue-400 transition-colors" onClick={() => handleLinkClick('/nist-controls')}>
           NIST Controls
         </Link>
-        <Link href="/nist-mapping" className="hover:text-cyan-400 transition-colors flex items-center gap-1" onClick={() => handleLinkClick('/nist-mapping')}>
-          <span className="text-sm">🔗</span>
+        <Link href="/nist-mapping" className="hover:text-cyan-400 transition-colors" onClick={() => handleLinkClick('/nist-mapping')}>
           Framework Map
         </Link>
-        <Link href="/vulnerabilities" className="hover:text-orange-400 transition-colors flex items-center gap-1" onClick={() => handleLinkClick('/vulnerabilities')}>
-          <span className="text-sm">🐛</span>
+        <Link href="/vulnerabilities" className="hover:text-orange-400 transition-colors" onClick={() => handleLinkClick('/vulnerabilities')}>
           Weaknesses
         </Link>
       </div>
@@ -110,7 +98,7 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="absolute top-full left-0 right-0 bg-gradient-to-b from-indigo-950 to-purple-900 border-b border-indigo-700 md:hidden">
           <div className="px-8 py-4 space-y-4">
-            <Link href="/components" className="block hover:text-cyan-400 transition-colors" onClick={() => handleLinkClick('/components')}>System Parts</Link>
+            <Link href="/components" className="block hover:text-cyan-400 transition-colors" onClick={() => handleLinkClick('/components')}>Components</Link>
             <Link href="/architectures" className="block hover:text-blue-400 transition-colors" onClick={() => handleLinkClick('/architectures')}>Blueprints</Link>
             <Link href="/threats" className="block hover:text-red-400 transition-colors" onClick={() => handleLinkClick('/threats')}>Attack Vectors</Link>
             <Link href="/controls" className="block hover:text-emerald-400 transition-colors" onClick={() => handleLinkClick('/controls')}>Defenses</Link>

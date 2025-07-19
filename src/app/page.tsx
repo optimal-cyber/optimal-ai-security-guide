@@ -74,7 +74,6 @@ export default function Home() {
           <Link href="/nist-mapping" className="group">
             <div className="relative bg-gradient-to-br from-blue-900/50 to-blue-800/30 backdrop-blur-sm rounded-3xl p-8 border border-blue-700/50 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-2">
               <div className="absolute top-4 right-4 w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
-              <div className="text-4xl mb-4">🔗</div>
               <h3 className="text-xl font-bold text-blue-300 mb-2">Framework Integration</h3>
               <p className="text-slate-400 text-sm">Interactive mapping of security frameworks and their interdependencies</p>
             </div>
@@ -83,7 +82,6 @@ export default function Home() {
           <Link href="/threats" className="group">
             <div className="relative bg-gradient-to-br from-red-900/50 to-red-800/30 backdrop-blur-sm rounded-3xl p-8 border border-red-700/50 hover:border-red-500 transition-all duration-300 transform hover:-translate-y-2">
               <div className="absolute top-4 right-4 w-3 h-3 bg-red-400 rounded-full animate-pulse"></div>
-              <div className="text-4xl mb-4">⚡</div>
               <h3 className="text-xl font-bold text-red-300 mb-2">Threat Analysis</h3>
               <p className="text-slate-400 text-sm">Comprehensive threat modeling and attack vector assessment</p>
             </div>
@@ -92,7 +90,6 @@ export default function Home() {
           <Link href="/aisvs" className="group">
             <div className="relative bg-gradient-to-br from-emerald-900/50 to-emerald-800/30 backdrop-blur-sm rounded-3xl p-8 border border-emerald-700/50 hover:border-emerald-500 transition-all duration-300 transform hover:-translate-y-2">
               <div className="absolute top-4 right-4 w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></div>
-              <div className="text-4xl mb-4">🛡️</div>
               <h3 className="text-xl font-bold text-emerald-300 mb-2">Security Protocols</h3>
               <p className="text-slate-400 text-sm">Advanced security verification and compliance methodologies</p>
             </div>
@@ -101,7 +98,6 @@ export default function Home() {
           <Link href="/components" className="group">
             <div className="relative bg-gradient-to-br from-purple-900/50 to-purple-800/30 backdrop-blur-sm rounded-3xl p-8 border border-purple-700/50 hover:border-purple-500 transition-all duration-300 transform hover:-translate-y-2">
               <div className="absolute top-4 right-4 w-3 h-3 bg-purple-400 rounded-full animate-pulse"></div>
-              <div className="text-4xl mb-4">⚙️</div>
               <h3 className="text-xl font-bold text-purple-300 mb-2">System Architecture</h3>
               <p className="text-slate-400 text-sm">AI system components and architectural defense patterns</p>
             </div>
@@ -137,7 +133,7 @@ export default function Home() {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🔒</span>
+                <span className="text-2xl font-bold text-white">NIST</span>
               </div>
               <h3 className="text-xl font-bold text-blue-300 mb-2">NIST 800-53</h3>
               <p className="text-slate-400 text-sm">Security Controls</p>
@@ -155,7 +151,7 @@ export default function Home() {
 
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🎯</span>
+                <span className="text-2xl font-bold text-white">AISVS</span>
               </div>
               <h3 className="text-xl font-bold text-purple-300 mb-2">OWASP AISVS</h3>
               <p className="text-slate-400 text-sm">Verification Standard</p>
@@ -210,7 +206,7 @@ export default function Home() {
               Standards
             </Link>
             <Link href="/components" className="px-6 py-3 bg-gradient-to-r from-orange-500 to-red-600 rounded-xl font-semibold hover:from-orange-600 hover:to-red-700 transition-all duration-300">
-              System Parts
+              Components
             </Link>
           </div>
         </div>

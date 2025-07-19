@@ -34,20 +34,20 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://yourusername.github.io'),
+  metadataBase: new URL('https://ai-security.gooptimal.io'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Optimal AI Security Guide",
-    description: "Comprehensive security guidance for AI systems",
-    url: "https://yourusername.github.io/optimal-ai-security-guide",
+    description: "Comprehensive security guidance for AI systems featuring NIST AI RMF, NIST 800-53 Rev 5, and OWASP AISVS mappings with interactive visualizations and developer resources.",
+    url: "https://ai-security.gooptimal.io",
     siteName: "Optimal AI Security Guide",
     images: [
       {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
+        url: "/optimal-logo.png",
+        width: 512,
+        height: 512,
         alt: "Optimal AI Security Guide",
       },
     ],
@@ -57,8 +57,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Optimal AI Security Guide",
-    description: "Comprehensive security guidance for AI systems",
-    images: ["/og-image.png"],
+    description: "Comprehensive security guidance for AI systems featuring NIST AI RMF, NIST 800-53 Rev 5, and OWASP AISVS mappings with interactive visualizations and developer resources.",
+    images: ["/optimal-logo.png"],
+    creator: "@optimal_cyber",
   },
   robots: {
     index: true,
@@ -84,8 +85,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" style={{ colorScheme: 'dark' }}>
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/optimal-logo.png" />
+        <link rel="apple-touch-icon" href="/optimal-logo.png" />
         <meta name="theme-color" content="#0f172a" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style dangerouslySetInnerHTML={{
