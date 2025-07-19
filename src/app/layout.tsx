@@ -85,8 +85,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" style={{ colorScheme: 'dark' }}>
       <head>
-        <link rel="icon" href="/optimal-logo.png" />
-        <link rel="apple-touch-icon" href="/optimal-logo.png" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/optimal-logo.png?v=2" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/optimal-logo.png?v=2" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/optimal-logo.png?v=2" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/optimal-logo.png?v=2" />
+        <link rel="shortcut icon" href="/optimal-logo.png?v=2" />
         <meta name="theme-color" content="#0f172a" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style dangerouslySetInnerHTML={{
