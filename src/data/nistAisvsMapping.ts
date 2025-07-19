@@ -1,4 +1,4 @@
-// Enhanced NIST AI RMF to OWASP AISVS Mapping with NIST 800-53 Rev 5 Controls
+// Enhanced NIST AI RMF to OWASP AISVS Mapping with NIST 800-53 Rev 5 Controls and MITRE ATLAS
 
 export const nistAisvsMapping = {
   nodes: [
@@ -57,6 +57,40 @@ export const nistAisvsMapping = {
     { id: 'C11', type: 'aisvs-category', label: 'C11: Privacy Protection', description: 'Protect AI system privacy' },
     { id: 'C12', type: 'aisvs-category', label: 'C12: Secure Deployment', description: 'Secure AI system deployment' },
     { id: 'C13', type: 'aisvs-category', label: 'C13: Secure Operations', description: 'Secure AI system operations' },
+    
+    // MITRE ATLAS Tactics
+    { id: 'RECONNAISSANCE', type: 'atlas-tactic', label: 'Reconnaissance', description: 'Gather information to plan future operations' },
+    { id: 'RESOURCE-DEVELOPMENT', type: 'atlas-tactic', label: 'Resource Development', description: 'Establish resources to support operations' },
+    { id: 'INITIAL-ACCESS', type: 'atlas-tactic', label: 'Initial Access', description: 'Gain entry into AI systems' },
+    { id: 'AI-MODEL-ACCESS', type: 'atlas-tactic', label: 'AI Model Access', description: 'Gain access to AI models and capabilities' },
+    { id: 'DISCOVERY', type: 'atlas-tactic', label: 'Discovery', description: 'Understand AI environment' },
+    { id: 'AI-ATTACK-STAGING', type: 'atlas-tactic', label: 'AI Attack Staging', description: 'Prepare for AI-specific attacks' },
+    { id: 'EXECUTION', type: 'atlas-tactic', label: 'Execution', description: 'Run malicious code on AI systems' },
+    { id: 'PERSISTENCE', type: 'atlas-tactic', label: 'Persistence', description: 'Maintain foothold in AI systems' },
+    { id: 'PRIVILEGE-ESCALATION', type: 'atlas-tactic', label: 'Privilege Escalation', description: 'Gain higher-level permissions' },
+    { id: 'DEFENSE-EVASION', type: 'atlas-tactic', label: 'Defense Evasion', description: 'Avoid detection in AI systems' },
+    { id: 'CREDENTIAL-ACCESS', type: 'atlas-tactic', label: 'Credential Access', description: 'Steal account credentials' },
+    { id: 'COLLECTION', type: 'atlas-tactic', label: 'Collection', description: 'Gather data of interest' },
+    { id: 'COMMAND-AND-CONTROL', type: 'atlas-tactic', label: 'Command & Control', description: 'Communicate with compromised systems' },
+    { id: 'EXFILTRATION', type: 'atlas-tactic', label: 'Exfiltration', description: 'Steal data from AI systems' },
+    { id: 'IMPACT', type: 'atlas-tactic', label: 'Impact', description: 'Manipulate, interrupt, or destroy AI systems' },
+    
+    // MITRE ATLAS Key Techniques (representative selection)
+    { id: 'AML.T0000', type: 'atlas-technique', label: 'Search Open Technical Databases', description: 'Search technical databases for AI system information' },
+    { id: 'AML.T0002', type: 'atlas-technique', label: 'Acquire Infrastructure', description: 'Acquire infrastructure for AI attacks' },
+    { id: 'AML.T0010', type: 'atlas-technique', label: 'Exploit Public-Facing Application', description: 'Exploit public-facing applications for initial access' },
+    { id: 'AML.T0040', type: 'atlas-technique', label: 'Access AI Model', description: 'Gain access to AI models' },
+    { id: 'AML.T0013', type: 'atlas-technique', label: 'System Information Discovery', description: 'Discover AI system information' },
+    { id: 'AML.T0005', type: 'atlas-technique', label: 'Stage Capabilities', description: 'Stage capabilities for AI attacks' },
+    { id: 'AML.T0011', type: 'atlas-technique', label: 'User Execution', description: 'Execute malicious code in AI environments' },
+    { id: 'AML.T0020', type: 'atlas-technique', label: 'Valid Accounts', description: 'Abuse valid accounts in AI systems' },
+    { id: 'AML.T0053', type: 'atlas-technique', label: 'Exploitation for Privilege Escalation', description: 'Exploit vulnerabilities for privilege escalation' },
+    { id: 'AML.T0015', type: 'atlas-technique', label: 'Impair Defenses', description: 'Impair defensive capabilities in AI systems' },
+    { id: 'AML.T0055', type: 'atlas-technique', label: 'Unsecured Credentials', description: 'Search for unsecured credentials' },
+    { id: 'AML.T0035', type: 'atlas-technique', label: 'Data from Information Repositories', description: 'Collect data from information repositories' },
+    { id: 'AML.T0072', type: 'atlas-technique', label: 'Application Layer Protocol', description: 'Use application layer protocols for C2' },
+    { id: 'AML.T0024', type: 'atlas-technique', label: 'Exfiltration Over C2 Channel', description: 'Exfiltrate data over C2 channels' },
+    { id: 'AML.T0015-IMPACT', type: 'atlas-technique', label: 'Data Manipulation', description: 'Manipulate data to impact AI system integrity' },
   ],
   links: [
     // NIST AI RMF Function to Subcategory mappings
@@ -81,6 +115,23 @@ export const nistAisvsMapping = {
     { source: 'SC', target: 'SC-7', type: 'family-control' },
     { source: 'SI', target: 'SI-4', type: 'family-control' },
     { source: 'SR', target: 'SR-1', type: 'family-control' },
+    
+    // ATLAS Tactic to Technique mappings
+    { source: 'RECONNAISSANCE', target: 'AML.T0000', type: 'tactic-technique' },
+    { source: 'RESOURCE-DEVELOPMENT', target: 'AML.T0002', type: 'tactic-technique' },
+    { source: 'INITIAL-ACCESS', target: 'AML.T0010', type: 'tactic-technique' },
+    { source: 'AI-MODEL-ACCESS', target: 'AML.T0040', type: 'tactic-technique' },
+    { source: 'DISCOVERY', target: 'AML.T0013', type: 'tactic-technique' },
+    { source: 'AI-ATTACK-STAGING', target: 'AML.T0005', type: 'tactic-technique' },
+    { source: 'EXECUTION', target: 'AML.T0011', type: 'tactic-technique' },
+    { source: 'PERSISTENCE', target: 'AML.T0020', type: 'tactic-technique' },
+    { source: 'PRIVILEGE-ESCALATION', target: 'AML.T0053', type: 'tactic-technique' },
+    { source: 'DEFENSE-EVASION', target: 'AML.T0015', type: 'tactic-technique' },
+    { source: 'CREDENTIAL-ACCESS', target: 'AML.T0055', type: 'tactic-technique' },
+    { source: 'COLLECTION', target: 'AML.T0035', type: 'tactic-technique' },
+    { source: 'COMMAND-AND-CONTROL', target: 'AML.T0072', type: 'tactic-technique' },
+    { source: 'EXFILTRATION', target: 'AML.T0024', type: 'tactic-technique' },
+    { source: 'IMPACT', target: 'AML.T0015-IMPACT', type: 'tactic-technique' },
     
     // NIST AI RMF Subcategory to NIST 800-53 Control mappings
     { source: 'GOVERN.1.1', target: 'RA-2', type: 'rmf-80053' },
@@ -125,6 +176,58 @@ export const nistAisvsMapping = {
     { source: 'MANAGE.1.1', target: 'C4', type: 'rmf-aisvs' },
     { source: 'MANAGE.1.1', target: 'C5', type: 'rmf-aisvs' },
     { source: 'MANAGE.2.1', target: 'C13', type: 'rmf-aisvs' },
+    
+    // ATLAS to NIST AI RMF mappings (attack patterns to risk management)
+    { source: 'RECONNAISSANCE', target: 'MAP.1.1', type: 'atlas-rmf' },
+    { source: 'RECONNAISSANCE', target: 'MAP.1.2', type: 'atlas-rmf' },
+    { source: 'RESOURCE-DEVELOPMENT', target: 'GOVERN.1.2', type: 'atlas-rmf' },
+    { source: 'INITIAL-ACCESS', target: 'MANAGE.1.1', type: 'atlas-rmf' },
+    { source: 'AI-MODEL-ACCESS', target: 'MANAGE.1.1', type: 'atlas-rmf' },
+    { source: 'DISCOVERY', target: 'MAP.1.1', type: 'atlas-rmf' },
+    { source: 'AI-ATTACK-STAGING', target: 'MANAGE.1.1', type: 'atlas-rmf' },
+    { source: 'EXECUTION', target: 'MANAGE.2.1', type: 'atlas-rmf' },
+    { source: 'PERSISTENCE', target: 'MANAGE.1.1', type: 'atlas-rmf' },
+    { source: 'PRIVILEGE-ESCALATION', target: 'MANAGE.1.1', type: 'atlas-rmf' },
+    { source: 'DEFENSE-EVASION', target: 'MEASURE.2.1', type: 'atlas-rmf' },
+    { source: 'CREDENTIAL-ACCESS', target: 'MANAGE.1.1', type: 'atlas-rmf' },
+    { source: 'COLLECTION', target: 'MEASURE.2.1', type: 'atlas-rmf' },
+    { source: 'COMMAND-AND-CONTROL', target: 'MEASURE.2.1', type: 'atlas-rmf' },
+    { source: 'EXFILTRATION', target: 'MANAGE.2.1', type: 'atlas-rmf' },
+    { source: 'IMPACT', target: 'MANAGE.2.1', type: 'atlas-rmf' },
+    
+    // ATLAS to NIST 800-53 mappings (attack techniques to security controls)
+    { source: 'AML.T0000', target: 'RA-2', type: 'atlas-80053' },
+    { source: 'AML.T0002', target: 'SA-11', type: 'atlas-80053' },
+    { source: 'AML.T0010', target: 'SC-7', type: 'atlas-80053' },
+    { source: 'AML.T0040', target: 'AC-3', type: 'atlas-80053' },
+    { source: 'AML.T0013', target: 'SI-4', type: 'atlas-80053' },
+    { source: 'AML.T0005', target: 'CM-6', type: 'atlas-80053' },
+    { source: 'AML.T0011', target: 'SI-4', type: 'atlas-80053' },
+    { source: 'AML.T0020', target: 'AC-2', type: 'atlas-80053' },
+    { source: 'AML.T0053', target: 'IA-2', type: 'atlas-80053' },
+    { source: 'AML.T0015', target: 'SI-4', type: 'atlas-80053' },
+    { source: 'AML.T0055', target: 'IA-2', type: 'atlas-80053' },
+    { source: 'AML.T0035', target: 'SI-4', type: 'atlas-80053' },
+    { source: 'AML.T0072', target: 'SC-7', type: 'atlas-80053' },
+    { source: 'AML.T0024', target: 'SI-4', type: 'atlas-80053' },
+    { source: 'AML.T0015-IMPACT', target: 'SI-4', type: 'atlas-80053' },
+    
+    // ATLAS to AISVS mappings (attack techniques to verification standards)
+    { source: 'AML.T0000', target: 'C3', type: 'atlas-aisvs' },
+    { source: 'AML.T0002', target: 'C8', type: 'atlas-aisvs' },
+    { source: 'AML.T0010', target: 'C4', type: 'atlas-aisvs' },
+    { source: 'AML.T0040', target: 'C5', type: 'atlas-aisvs' },
+    { source: 'AML.T0013', target: 'C4', type: 'atlas-aisvs' },
+    { source: 'AML.T0005', target: 'C4', type: 'atlas-aisvs' },
+    { source: 'AML.T0011', target: 'C2', type: 'atlas-aisvs' },
+    { source: 'AML.T0020', target: 'C5', type: 'atlas-aisvs' },
+    { source: 'AML.T0053', target: 'C5', type: 'atlas-aisvs' },
+    { source: 'AML.T0015', target: 'C10', type: 'atlas-aisvs' },
+    { source: 'AML.T0055', target: 'C5', type: 'atlas-aisvs' },
+    { source: 'AML.T0035', target: 'C1', type: 'atlas-aisvs' },
+    { source: 'AML.T0072', target: 'C6', type: 'atlas-aisvs' },
+    { source: 'AML.T0024', target: 'C1', type: 'atlas-aisvs' },
+    { source: 'AML.T0015-IMPACT', target: 'C10', type: 'atlas-aisvs' },
   ],
 };
 
@@ -148,6 +251,12 @@ export const mappingMetadata = {
       version: '1.0',
       description: 'Comprehensive framework for verifying AI system security',
       url: 'https://owasp.org/www-project-ai-security-verification-standard/'
+    },
+    atlas: {
+      name: 'MITRE ATLAS',
+      version: '4.9.0',
+      description: 'Adversarial Threat Landscape for Artificial-Intelligence Systems',
+      url: 'https://atlas.mitre.org/'
     }
   },
   nodeTypes: {
@@ -155,13 +264,19 @@ export const mappingMetadata = {
     'nist-subcategory': { color: '#60A5FA', size: 15, label: 'NIST RMF Subcategory' },
     'nist-80053-family': { color: '#8B5CF6', size: 18, label: 'NIST 800-53 Family' },
     'nist-80053-control': { color: '#A78BFA', size: 12, label: 'NIST 800-53 Control' },
-    'aisvs-category': { color: '#10B981', size: 16, label: 'AISVS Category' }
+    'aisvs-category': { color: '#10B981', size: 16, label: 'AISVS Category' },
+    'atlas-tactic': { color: '#EF4444', size: 18, label: 'ATLAS Tactic' },
+    'atlas-technique': { color: '#F87171', size: 14, label: 'ATLAS Technique' }
   },
   linkTypes: {
     'function-subcategory': { color: '#3B82F6', width: 2, label: 'Function → Subcategory' },
     'family-control': { color: '#8B5CF6', width: 2, label: 'Family → Control' },
+    'tactic-technique': { color: '#EF4444', width: 2, label: 'Tactic → Technique' },
     'rmf-80053': { color: '#F59E0B', width: 1.5, label: 'RMF → 800-53' },
     '80053-aisvs': { color: '#EF4444', width: 1.5, label: '800-53 → AISVS' },
-    'rmf-aisvs': { color: '#10B981', width: 1.5, label: 'RMF → AISVS' }
+    'rmf-aisvs': { color: '#10B981', width: 1.5, label: 'RMF → AISVS' },
+    'atlas-rmf': { color: '#8B5CF6', width: 1.5, label: 'ATLAS → RMF' },
+    'atlas-80053': { color: '#F59E0B', width: 1.5, label: 'ATLAS → 800-53' },
+    'atlas-aisvs': { color: '#10B981', width: 1.5, label: 'ATLAS → AISVS' }
   }
 }; 
