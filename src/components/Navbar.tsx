@@ -41,6 +41,9 @@ export default function Navbar() {
         <Link href="/threats" className="hover:text-red-400 transition-colors" onClick={() => handleLinkClick('/threats')}>
           Attack Vectors
         </Link>
+        <Link href="/atlas" className="hover:text-orange-400 transition-colors" onClick={() => handleLinkClick('/atlas')}>
+          ATLAS
+        </Link>
         <Link href="/controls" className="hover:text-emerald-400 transition-colors" onClick={() => handleLinkClick('/controls')}>
           Defenses
         </Link>
@@ -101,6 +104,7 @@ export default function Navbar() {
             <Link href="/components" className="block hover:text-cyan-400 transition-colors" onClick={() => handleLinkClick('/components')}>Components</Link>
             <Link href="/architectures" className="block hover:text-blue-400 transition-colors" onClick={() => handleLinkClick('/architectures')}>Blueprints</Link>
             <Link href="/threats" className="block hover:text-red-400 transition-colors" onClick={() => handleLinkClick('/threats')}>Attack Vectors</Link>
+            <Link href="/atlas" className="block hover:text-orange-400 transition-colors" onClick={() => handleLinkClick('/atlas')}>ATLAS</Link>
             <Link href="/controls" className="block hover:text-emerald-400 transition-colors" onClick={() => handleLinkClick('/controls')}>Defenses</Link>
             <Link href="/aisvs" className="block hover:text-purple-400 transition-colors" onClick={() => handleLinkClick('/aisvs')}>Standards</Link>
             <Link href="/nist-controls" className="block hover:text-blue-400 transition-colors" onClick={() => handleLinkClick('/nist-controls')}>NIST Controls</Link>

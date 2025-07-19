@@ -199,6 +199,9 @@ export default function Home() {
             <Link href="/threats" className="px-6 py-3 bg-gradient-to-r from-red-500 to-pink-600 rounded-xl font-semibold hover:from-red-600 hover:to-pink-700 transition-all duration-300">
               Attack Vectors
             </Link>
+            <Link href="/atlas" className="px-6 py-3 bg-gradient-to-r from-orange-500 to-yellow-600 rounded-xl font-semibold hover:from-orange-600 hover:to-yellow-700 transition-all duration-300">
+              ATLAS
+            </Link>
             <Link href="/controls" className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all duration-300">
               Defenses
             </Link>
