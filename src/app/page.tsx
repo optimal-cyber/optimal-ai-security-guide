@@ -189,6 +189,49 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Enterprise Tools Section */}
+        <div className="bg-gradient-to-br from-amber-900/20 to-orange-800/10 rounded-3xl p-8 border border-amber-700/30 mb-16">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
+                Enterprise Tools
+              </span>
+            </h2>
+            <p className="text-slate-400">Interactive tools for CTOs, CIOs, and Security Leaders</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/assessment" className="group">
+              <div className="bg-slate-900/50 rounded-2xl p-6 border border-slate-700/50 hover:border-amber-500/50 transition-all">
+                <div className="text-3xl mb-3">📊</div>
+                <h3 className="font-bold text-white mb-2">Maturity Assessment</h3>
+                <p className="text-slate-400 text-sm">Evaluate your AI security posture against industry frameworks</p>
+              </div>
+            </Link>
+            <Link href="/framework-selector" className="group">
+              <div className="bg-slate-900/50 rounded-2xl p-6 border border-slate-700/50 hover:border-amber-500/50 transition-all">
+                <div className="text-3xl mb-3">🎯</div>
+                <h3 className="font-bold text-white mb-2">Framework Selector</h3>
+                <p className="text-slate-400 text-sm">Find which security frameworks apply to your organization</p>
+              </div>
+            </Link>
+            <Link href="/checklist" className="group">
+              <div className="bg-slate-900/50 rounded-2xl p-6 border border-slate-700/50 hover:border-amber-500/50 transition-all">
+                <div className="text-3xl mb-3">✅</div>
+                <h3 className="font-bold text-white mb-2">Compliance Checklist</h3>
+                <p className="text-slate-400 text-sm">Track your compliance progress with exportable checklists</p>
+              </div>
+            </Link>
+          </div>
+          <div className="mt-6 text-center">
+            <Link
+              href="/executive-summary"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-600 rounded-xl font-semibold hover:from-amber-600 hover:to-orange-700 transition-all"
+            >
+              View Executive Summary
+            </Link>
+          </div>
+        </div>
+
         {/* Quick Navigation */}
         <div className="text-center">
           <h2 className="text-2xl font-bold text-slate-300 mb-8">Quick Access</h2>
@@ -199,17 +242,17 @@ export default function Home() {
             <Link href="/threats" className="px-6 py-3 bg-gradient-to-r from-red-500 to-pink-600 rounded-xl font-semibold hover:from-red-600 hover:to-pink-700 transition-all duration-300">
               Attack Vectors
             </Link>
-            <Link href="/atlas" className="px-6 py-3 bg-gradient-to-r from-orange-500 to-yellow-600 rounded-xl font-semibold hover:from-orange-600 hover:to-yellow-700 transition-all duration-300">
-              ATLAS
+            <Link href="/red-team" className="px-6 py-3 bg-gradient-to-r from-red-600 to-orange-600 rounded-xl font-semibold hover:from-red-700 hover:to-orange-700 transition-all duration-300">
+              Red Team Guide
             </Link>
-            <Link href="/controls" className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all duration-300">
-              Defenses
+            <Link href="/implementation-guide" className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl font-semibold hover:from-emerald-600 hover:to-teal-700 transition-all duration-300">
+              Implementation Guide
             </Link>
-            <Link href="/aisvs" className="px-6 py-3 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-xl font-semibold hover:from-purple-600 hover:to-indigo-700 transition-all duration-300">
-              Standards
+            <Link href="/model-profiles" className="px-6 py-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl font-semibold hover:from-blue-600 hover:to-indigo-700 transition-all duration-300">
+              Model Profiles
             </Link>
-            <Link href="/components" className="px-6 py-3 bg-gradient-to-r from-orange-500 to-red-600 rounded-xl font-semibold hover:from-orange-600 hover:to-red-700 transition-all duration-300">
-              Components
+            <Link href="/regulations" className="px-6 py-3 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-xl font-semibold hover:from-purple-600 hover:to-indigo-700 transition-all duration-300">
+              Regulations
             </Link>
           </div>
         </div>
